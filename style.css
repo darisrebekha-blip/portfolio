@@ -1,0 +1,140 @@
+/* style.css */
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a05454;
+  color: #e7e2e2;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* NAVBAR */
+.navbar {
+  background-color: #b63f3f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* DARK MODE BUTTON */
+#darkToggle {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode #darkToggle {
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* HOME */
+.home {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.home h1 {
+  font-size: 36px;
+}
+
+/* FAQ */
+.faq {
+  padding: 40px 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+/* DARK MODE BUTTON */
+#darkToggle {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode #darkToggle {
+  background-color: #fff;
+  color: #000;
+}
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+/* DARK MODE BUTTON */
+#darkToggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  z-index: 9999;
+}
+
+body.dark-mode #darkToggle {
+  background-color: #fff;
+  color: #000;
+}
